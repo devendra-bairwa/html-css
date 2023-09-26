@@ -1,0 +1,142 @@
+*{
+    margin: 0;/*0 se start kr sake left corner*/
+    padding: 0;/*already koi page ki padding h to remove ho jaye*/
+    font-family: 'Poppins', sans-serif;/*page me jo likha h uski style*/
+}
+
+.main_box{
+    background: url(photo.jpg);/*backgrd me photo add krne k liye*/
+    height: 100vh;/*photo pure text ki size lele*/
+    background-size: cover ;/*pure page me image a jaye*/
+}
+
+.btn_one i{
+    color: white;/*menu bar ka color*/
+    font-size: 30px;/*menu baar ka size*/
+    font-weight: 700;/*intensity*/
+    position: absolute;/*position change krne k liye*/
+    left: 16px;/*left se 16px pe*/
+    line-height: 60px;/*menu baar ki kitni height ho*/
+    cursor: pointer;/*curser ko hand sign krne k liye*/
+    transition: all 0.3 s linear;/*button animation k liye*/
+}
+
+.sidebar_menu{
+    position: fixed;/*fix position*/
+    left:-300px;/*hide krne k liye line no 130 pe kam ayega abhi liye hide ke saktee h es line ko*/
+    height: 100vh;/*side bar page k height ka ho*/
+    width: 300px;/*side se size*/
+    background-color:rgba(255, 255, 255, 0.1);/*sidebar ka color*/
+    box-shadow: 0 0 6px rgba(255,255, 255,0.5);/*box ki shadow style*/
+    transition: all 0.3 s linear;/*side se screen pe ane k liye*/
+}
+
+.sidebar_menu .logo{
+    position: absolute;/*parent k according position set ho jaye*/
+    width: 100%;/*menu baar jitni side se jagha lele*/
+    line-height: 60px;/*box kitna area le raha h*/
+    box-shadow: 0 2px 4px rgba(255,255, 255,0.5);
+    height:60px ;/*apna college logo ki shadow box dekhne k liye*/
+}
+
+.sidebar_menu .logo a{/*apna college*/
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500px;
+
+}
+
+.sidebar_menu .btn_two i{/*X sign k liye*/
+    color: gray;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 0;/*hide krne k liye*//*line no 140pe kam ayega abhi hide ke sakte h*/
+    cursor: pointer;/*curser ko hand sign krne k liye*/
+    transition: all 0.3 s linear;/*X transition k liye*/
+}
+
+.sidebar_menu .menu{/*list ka box apna college k niche */
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{/*list ka data*/
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,a{/*icon or link */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    
+    padding-right:8px ;/*list k icon k right me thodi jagha dene k liye*/
+}
+
+.sidebar_menu .social_media{/*social media icon k liye*/
+     
+      position: absolute;/*position parent yani menu bar k according set hogi page k according nhi*/
+      left: 25%;/*menu baar k according 25% left me a jayega*/
+      bottom:50px;
+
+
+}
+
+.sidebar_menu .social_media i{/*icon social media*/
+    columns: white;
+    opacity: 0.5;
+    padding: 0 5px;/*icon k bich sapce dene k liye*/
+
+}
+
+#check{/*check box*/
+    display: none;/*page se remove krne k liye*/
+/*page pe abhi bhi hoga lekin hidden hoga or jitni bhi space li hogi sab leave kr dega*/
+}
+
+
+
+.main_box .sidebar_menu li:hover{
+    /*list me hover pe box effect*/
+    box-shadow: 0 0 4px rgba(255,255, 255,0.5);
+
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+
+
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+
+
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;/*bright dikhe*/
+    transform: scale(1.1);/*bde dikhe hover pe*/
+}
+
+
+#check:checked ~ .sidebar_menu{/*sibling selector*//*check krne pe side bar menu dikhe abhi nhi dekhega kyoki -300 pe h jaise hi check hoga left 0 ho jayega or wo within screen a jayega or dikh jayega*/
+    left:0;/*scren pe lane k liye*/
+}
+
+#check:checked ~ .btn_one i {/*apna side wala button usko hide krne k  liye*/
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {/*X sign dikhe uske liye*/
+    opacity: 1;
+}

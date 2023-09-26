@@ -1,0 +1,40 @@
+div{
+    border: 2px solid black;/*border*/
+   display: inline-block;/*image ek line me lane k liye*/
+   padding: 0px 3px px 2px;/*box ko laft right move krne k liye*/
+   box-shadow: 0 4px 8px black; /*box ki shadow k liye*/
+   
+   margin: 3px;/*dono boxes k bich k distance k liye*/
+   border-radius: 5px;/*boder ko curve*/
+   transition: 1s;/*animation time*/
+}
+
+#hackathon {
+    width: 131px;/*image adjust*/
+    height: 160px;
+    
+    /*padding kr sakte h image ko left right up down move krne k liye */
+    border-radius: 3px 3px 4px 4px;
+}
+
+#wtp{
+    width: 149px;/**/
+    height: 160px;/**/
+    border-radius: 3px 3px 4px 4px;/*image ko curve krne k liye*/
+
+}
+
+p{
+    color: darkred;
+    background-color:lightsteelblue;
+}
+ p:hover{
+    color:darkgreen;
+    background-color:lightgreen;
+
+}
+
+div:hover{
+    box-shadow: 0 8px 16px rgb(248, 8, 8);/**/
+    
+}

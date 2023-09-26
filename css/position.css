@@ -1,0 +1,40 @@
+div{
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    background-color: green;
+    text-align: center;
+    margin:  20px  ;
+    display: inline-block;
+
+}
+
+#a{
+    position:fixed;
+    background-color: yellow;
+    top: 0;
+    left: 0;
+   
+
+}
+#a{
+    position:relative;
+    background-color: yellow;
+    top: 0;
+    left: 0;}
+
+    #a{
+        position:absolute;
+        background-color: yellow;
+        top: 0;
+        left: 0;}
+
+        #a{
+            position:static;
+            background-color: yellow;
+            top: 0;
+            left: 0;}
+
+
+
+

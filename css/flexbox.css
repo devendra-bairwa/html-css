@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+
+#container{
+   height: 50px;
+   width: 100%;
+
+   background-color: azure;
+   border: 2px solid black;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   justify-content: baseline;
+   
+
+
+    
+}
+#first{
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.box{
+
+
+
+
+height: 50px;
+width: 100px;
+text-align: center;
+   
+
+}
